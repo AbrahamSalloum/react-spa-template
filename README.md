@@ -1,6 +1,6 @@
 backend/frontend template for prototyping and minimal boilerplate
 
-#frontend
+## Frontend
 React basic template that uses create-react-app, Redux, Auth0, and react-router-dom.
 
 To be used with the backend template ("backend" folder) which uses express and jwts for auth (from auth0)
@@ -13,7 +13,7 @@ Auth0 needs https, so run with (Bash):
 
 
 
-#backend
+## Backend
 this is a template backend that sets up express and jwt auths (with auth0)
 .env needs to be changed as per setup.
 
