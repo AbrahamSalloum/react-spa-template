@@ -15,10 +15,14 @@ const ExternalApi =  () => {
     dispatch(f(token))
   }
 
+  const notoken = async (f) => {
+    dispatch(f())
+  }
+
   return(
     <div>
       <button
-        onClick={() => { getoken(callOpenApi) } }
+        onClick={() => { notoken(callOpenApi) } }
         >Public Message (no jwt)</button>
       <button
         onClick={() => { getoken(callSecureApi) }}

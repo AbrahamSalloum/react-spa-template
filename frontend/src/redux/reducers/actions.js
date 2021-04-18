@@ -21,7 +21,7 @@ export const callOpenApi = (token) => {
 }
 
 
-export const callSecureApi =  (token) => {
+export const callSecureApi =  (token = "") => {
   return async (dispatch, getState) => {
     try {
       const response = await fetch(`${serverUrl}/api/messages/protected-message`,
